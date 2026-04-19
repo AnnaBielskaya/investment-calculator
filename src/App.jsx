@@ -13,7 +13,7 @@ function App() {
 
   const handleChange = (identifier, value) => {
     setUserInput((prev) => {
-      return { ...prev, [identifier]: value };
+      return { ...prev, [identifier]: +value };
     });
 
     console.log(userInput);
