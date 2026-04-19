@@ -1,4 +1,3 @@
-import React from "react";
 import logoImg from "./../assets/investment-calculator-logo.png";
 
 const Header = () => {
