@@ -7,11 +7,13 @@ const Results = ({ userInput }) => {
   return (
     <table id="result">
       <thead>
-        <th>Year</th>
-        <th>Investment value</th>
-        <th>Interest (Year)</th>
-        <th>Total Interest</th>
-        <th>Invested Capital</th>
+        <tr>
+          <th>Year</th>
+          <th>Investment value</th>
+          <th>Interest (Year)</th>
+          <th>Total Interest</th>
+          <th>Invested Capital</th>
+        </tr>
       </thead>
       <tbody>
         {result.map((data) => {
