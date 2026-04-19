@@ -11,19 +11,19 @@ function App() {
     duration: 10,
   });
 
+  const isValid = userInput.duration >= 1;
+
   const handleChange = (identifier, value) => {
     setUserInput((prev) => {
       return { ...prev, [identifier]: +value };
     });
-
-    console.log(userInput);
   };
 
   return (
     <>
       <Header />;
       <UserInput userInput={userInput} onChange={handleChange} />
-      <Results userInput={userInput} />
+      {isValid && <Results userInput={userInput} />}
     </>
   );
 }
